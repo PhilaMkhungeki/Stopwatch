@@ -1,0 +1,74 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000;
+}
+
+.stopwatch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.display {
+  font-size: 7rem;
+  margin-bottom: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  color: hsl(0, 0%, 30%);
+  text-shadow: 2px 2px 2px hsla(0, 0%, 0%, 0.75);
+}
+
+.controls button{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 5px;
+  padding: 10px 20px;
+  min-width: 125px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.start-button {
+  background-color: hsl(115, 100%, 40%);
+}
+
+.start-button:hover {
+  background-color: hsl(115, 100%, 35%);
+}
+
+.stop-button {
+  background-color: hsl(10, 90%, 50%);
+}
+
+.stop-button:hover {
+  background-color: hsl(10, 90%, 45%);
+}
+
+.reset-button {
+  background-color: hsl(205, 90%, 60%);
+}
+
+.reset-button:hover {
+  background-color: hsl(205, 90%, 55%);
+}
+
+/* Mobile screen */
+@media (max-width: 600px) {
+  .display {
+    font-size: 5rem;
+    margin-bottom: 20px;
+    margin-top: 230px;
+  }
+
+  .controls button {
+    font-size: 1.2rem;
+    padding: 8px 16px;
+    min-width: 80px;
+  }
+}
